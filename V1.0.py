@@ -1,11 +1,11 @@
 import requests
 import json
+import time
 b='47093004950016'#初始化消息id（填需要发送频道的最后一条消息链接的最后一串数字,必须设置）
 okkey=0
 lp='40e8a03ab7363267748ae59ae8af09fd1bf15551a96d3bd995b1ad0167f7f5b038'#令牌
 pd_id=39650900596224#频道id
 while True:
-    import time
     time.sleep(1)
     url='https://a1.fanbook.mobi/api/bot/'+lp+'/message/getList'#注意令牌
     headers = {'content-type':"application/json;charset=utf-8"}
